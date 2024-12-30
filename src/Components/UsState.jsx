@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
+//Hooks are functions in react that allows us to use React features without writing class components
 //1
-// Allows functional components to manage internal state.
-// Returns a state variable and a function to update it.
+// Allows us to track state in a functional Component
+//state generally refers to data/properties that need to be tarcked in an application.
+//Usestate accepts initial state and Returns two values: the current state and a function to update it.
 // Commonly used for simple state management, like toggles, counters, and form inputs.
-// state refers to data or properties that is tracked in an application
 
 export const UsState = () => {
   const [count, setCount] = useState(0);

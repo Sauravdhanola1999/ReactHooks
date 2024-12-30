@@ -1,9 +1,12 @@
 import React, { useContext, useState } from "react";
 import { createContext } from "react";
 //3
-// Consumes context values in functional components.
-// Helps avoid prop drilling by allowing components to access global or shared state directly.
-// Commonly used with React’s Context API to manage application-wide states like themes or user authentication.
+// A react hook that allows us to share data(context) accross multiple components without need of passing explicitly through props.
+//Avoid prop drilling by allowing components to access global or shared state directly.
+//Commonly used with React’s Context API to manage global states, such as themes or user authentication
+//Create a Context: Use React.createContext to create a context object. This object will hold the shared data.
+//Provide the Context: Use the Provider component from the context object to wrap the part of the component tree that needs access to the context. The value prop of the Provider supplies the data.
+//Consume the Context: Use the useContext hook inside any functional component to access the context value
 
 const globalStateContext = createContext(null);
 export const UsContext = () => {
