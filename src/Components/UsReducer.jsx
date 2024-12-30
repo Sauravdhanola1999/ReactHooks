@@ -3,6 +3,12 @@ import React, { useReducer } from "react";
 // Provides complex state management using a reducer function and actions.
 // Works similarly to Redux but within a functional component.
 // Ideal for scenarios with multiple state transitions or complex state logic.
+// useReducer provides two things(state:the current state of component, dispatch: a function to send the actions describe how to update);
+//useReducer accepts two arguments (reducer, initial State); 
+//reducer function decides how a state should update;
+// A pure function that takes the current state and an action as an argument and return new state;
+//action means what should happen
+
 
 const reducer = (state, action) => {
   switch (action.type) {

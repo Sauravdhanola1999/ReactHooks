@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from "react";
 //5
-// Memoizes computed values to avoid recalculations on each render.
+// used to optimize performance by memoizing the result of a computation. It ensures that a function's result is only recomputed when its dependencies change, avoiding unnecessary recalculations during render
 //Memoize means to store the result of a function so, that they can be reused instead of recalculating
 // Useful for optimizing expensive calculations or derived state that depends on multiple variables.
 // Uses a dependency array to control when the memoized value should be recalculated.
